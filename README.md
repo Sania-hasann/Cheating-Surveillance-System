@@ -73,9 +73,9 @@ python main.py
 3. **Cheating Behavior Analysis**: Flags abnormal behavior such as frequent head turning or gaze shifts.
 
 ## Demo Videos
-- **[Gaze Detection](Demo_video/gaze_detection.mp4)**
-- **[Head Movement Detection](Demo_video/headpose_detection.mp4)**
-- **[Mobile Phone Detection](Demo_video/Mobile_detection.mp4)**
+- **[Gaze Detection](Demo_vid/gaze_detection.mp4)**
+- **[Head Movement Detection](Demo_vid/headpose_detection.mp4)**
+- **[Mobile Phone Detection](Demo_vid/Mobile_detection.mp4)**
 
 ## Dataset
 The mobile phone detection model is trained on the **Roboflow Cellphone Detection Dataset**. You can access it here: [Roboflow Cellphone Dataset](https://universe.roboflow.com/d1156414/cellphone-0aodn).
