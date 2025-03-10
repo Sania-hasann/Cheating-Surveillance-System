@@ -75,7 +75,7 @@ python main.py
 ## Demo Videos
 - **[Gaze Detection](https://github.com/Sania-hasann/Cheating-Surveillance-System/raw/main/Demo_vid/gaze_detection.mp4)**
 - **[Head Movement Detection](https://github.com/Sania-hasann/Cheating-Surveillance-System/raw/main/Demo_vid/headpose_detection.mp4)**
-- **[Mobile Phone Detection](https://github.com/Sania-hasann/Cheating-Surveillance-System/raw/main/Demo_vid/Mobile_detection.mp4)**
+- **[Mobile Phone Detection](https://github.com/Sania-hasann/Cheating-Surveillance-System/blob/main/Demo_vid/Mobile-detection.mp4)**
 
 ## Demo Videos
 - **[Gaze Detection](Demo_vid/gaze_detection.mp4)**
