@@ -40,7 +40,7 @@ Ensure you have the following installed:
    wget http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2
    bzip2 -d shape_predictor_68_face_landmarks.dat.bz2
    ```
-4. Set up the YOLO model:
+4. Set up the YOLO model:  
    -You have trained your YOLO model on the [Roboflow Cellphone Dataset](https://universe.roboflow.com/d1156414/cellphone-0aodn).
    -Download the trained YOLO weights and place the weights file in the models/ directory.
 
