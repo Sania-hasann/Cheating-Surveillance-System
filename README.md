@@ -5,7 +5,7 @@ The **Cheating Surveillance System** is designed to detect cheating during Onlin
 
 ## Features
 - **Head and Pupil Movement Detection**: Uses **dlib's Shape Predictor 68** to track facial landmarks and detect suspicious gaze patterns.
-- **Mobile Phone Detection**: Utilizes a **YOLO model** trained on the [Roboflow Cellphone Detection Dataset](https://universe.roboflow.com/d1156414/cellphone-0aodn) to detect mobile phones in real-time.
+- **Mobile Phone Detection**: Utilizes a **YOLOv12 model** trained on the [Roboflow Cellphone Detection Dataset](https://universe.roboflow.com/d1156414/cellphone-0aodn) to detect mobile phones in real-time.
 - **Real-Time Monitoring**: Processes live video feeds for instant analysis and detection.
 - **Alert System**: Detects and flags potential cheating behavior, such as excessive head or pupil movement in the left, right, up, or down direction for longer than the allowed time.
 
@@ -20,7 +20,8 @@ The **Cheating Surveillance System** is designed to detect cheating during Onlin
 ```
 cheating-surveillance/
 │── models/                 # Contains trained YOLO weights and shape predictor model  
-    |__ best.pt
+    |__ best_yolov8.pt
+    |__ best_yolov12.pt
     |__ shape_predictor_68_face_landmarks.dat 
 │── log                     # Screenshots
 │── main.py                 # Entry point for real-time detection
