@@ -7,7 +7,7 @@ import time
 
 # Load face detector & landmarks predictor
 detector = dlib.get_frontal_face_detector()
-predictor = dlib.shape_predictor("model/shape_predictor_68_face_landmarks.dat")
+predictor = dlib.shape_predictor("models/shape_predictor_68_face_landmarks.dat")
 
 # 3D Model Points (Mapped to Facial Landmarks)
 model_points = np.array([

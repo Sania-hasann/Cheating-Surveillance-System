@@ -4,7 +4,7 @@ import numpy as np
 
 # Load dlib’s face detector and 68 landmarks model
 detector = dlib.get_frontal_face_detector()
-predictor = dlib.shape_predictor("model/shape_predictor_68_face_landmarks.dat")
+predictor = dlib.shape_predictor("models/shape_predictor_68_face_landmarks.dat")
 
 def detect_pupil(eye_region):
     gray_eye = cv2.cvtColor(eye_region, cv2.COLOR_BGR2GRAY)
