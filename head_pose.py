@@ -95,13 +95,18 @@ def process_head_pose(frame, calibrated_angles=None):
         yaw = smooth_angle(yaw_history, angles[1])
         roll = smooth_angle(roll_history, angles[2])
 
-        # If calibrating, return the current angles as calibrated_angles
+        # *Fix: Ensure calibrated_angles is valid before unpacking*
         if calibrated_angles is None:
-            return frame, (pitch, yaw, roll)
+            return frame, (pitch, yaw, roll)  # Store calibrated angles
 
-        # Use calibrated angles for head pose detection
-        pitch_offset, yaw_offset, roll_offset = calibrated_angles
-        PITCH_THRESHOLD = 8  # Reduced sensitivity
+        if not isinstance(calibrated_angles, (tuple, list)) or len(calibrated_angles) != 3:
+            print("⚠ Error: calibrated_angles is invalid:", calibrated_angles)
+            return frame, "Calibration Error"
+
+        pitch_offset, yaw_offset, roll_offset = calibrated_angles  # ✅ Now safe to unpack
+
+        # Define head movement thresholds
+        PITCH_THRESHOLD = 8
         YAW_THRESHOLD = 12
         ROLL_THRESHOLD = 5
 
