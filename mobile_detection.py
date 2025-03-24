@@ -3,7 +3,7 @@ import torch
 from ultralytics import YOLO
 
 # Load trained YOLO model
-model = YOLO(r"C:\Users\LENOVO\Documents\FYP\Cheating Surveillance\models\best.pt")  
+model = YOLO(r"C:\Users\Lenovo\Desktop\Cheating Survilience System\model\best_yolov12.pt")  
 device = "cuda" if torch.cuda.is_available() else "cpu"
 model.to(device)
 
